@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO: replace "Your Name" everywhere on the site -->
-  <title>Interests | Your Name</title>
-  <meta name="description" content="Your Name's homepage: research, publications, projects and interests.">
+  <title>Interests | Yong Qiao</title>
+  <meta name="description" content="Yong Qiao (乔勇): Software Development Engineer at Amazon Web Services; causal discovery, LLM agents and prompt engineering. Publications, projects and interests.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -15,7 +14,7 @@
 <body>
   <nav class="navbar">
     <div class="container">
-      <a class="nav-brand" href="./"><b>Your</b> Name</a>
+      <a class="nav-brand" href="./"><b>Yong</b> Qiao</a>
       <div style="display:flex;align-items:center;gap:4px;">
         <ul class="nav-links">
           <li><a href="./">about</a></li>
@@ -37,65 +36,63 @@
 
   <main class="container">
     <h1 class="post-title">interests</h1>
-    <p class="desc">What I do when I am not doing research.</p>
+    <p class="desc">What I do when I am not working on causality and agents.</p>
 
-    <!-- TODO: each card = one hobby. Put a photo in assets/img/interests/ and
-         replace the emoji with <img src="assets/img/interests/xxx.jpg" alt="">. -->
-    <div class="grid">
-      <div class="card">
-        <div class="card-cover">📷</div>
+    <!-- Each card = one interest. Cover can be an emoji or
+         <img src="assets/img/interests/xxx.jpg" alt=""> -->
+    <div class="grid grid-3">
+      <a class="card card-link" href="#writing">
+        <div class="card-cover">✍️</div>
         <div class="card-body">
-          <h3>Photography</h3>
-          <p>[What you shoot, what gear, where. One or two sentences.]</p>
-          <div class="tags"><span class="tag">street</span><span class="tag">film</span></div>
+          <h3>Reading &amp; Writing</h3>
+          <p>I read widely and write essays on my Substack, <i>Homo_sapiens</i>.</p>
+        </div>
+      </a>
+      <div class="card">
+        <div class="card-cover">🏛️</div>
+        <div class="card-body">
+          <h3>Philosophy</h3>
+          <p>Questions about causation, knowledge and mind are never far from what I work on in causal discovery and AI agents.</p>
         </div>
       </div>
-      <div class="card">
-        <div class="card-cover">📚</div>
+      <a class="card card-link" href="#badminton">
+        <div class="card-cover"><img src="assets/img/interests/badminton-1.jpg" alt="Badminton tournament"></div>
         <div class="card-body">
-          <h3>Reading</h3>
-          <p>[Genres you love, a book that changed how you think.]</p>
-          <div class="tags"><span class="tag">sci-fi</span><span class="tag">history</span></div>
+          <h3>Badminton</h3>
+          <p>My favorite sport. Fast rallies, footwork and a lot of sweat &mdash; the best way to clear my head.</p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-cover">✈️</div>
-        <div class="card-body">
-          <h3>Travel</h3>
-          <p>[Places you have been / want to go.]</p>
-          <div class="tags"><span class="tag">hiking</span><span class="tag">national parks</span></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-cover">🧩</div>
-        <div class="card-body">
-          <h3>Competitive Programming</h3>
-          <p>I used to practice algorithms for ACM-ICPC contests &mdash; see my
-            <a href="https://github.com/NOVA-QYT/Homo-sapiens-ACM-Learning">ACM notes</a> and
-            <a href="https://github.com/NOVA-QYT/LeetCode-Solutions">LeetCode solutions</a>.</p>
-          <div class="tags"><span class="tag">C++</span><span class="tag">algorithms</span></div>
-        </div>
-      </div>
+      </a>
     </div>
 
-    <h2 class="section">currently reading</h2>
-    <ul class="list-plain">
-      <li><i>[Book title]</i> <span class="muted">&mdash; Author</span></li>
-      <li><i>[Book title]</i> <span class="muted">&mdash; Author</span></li>
+    <h2 class="section" id="writing">writing</h2>
+    <p>
+      I write essays on philosophy, life and thinking at
+      <a href="https://homosapiens547826.substack.com/" target="_blank" rel="noopener"><b>Homo_sapiens</b> on Substack</a>.
+      <!-- WeChat Official Account: add name / QR code here -->
+    </p>
+    <ul class="posts">
+      <li>
+        <a class="post-title-link" href="https://homosapiens547826.substack.com/p/before-the-first-note" target="_blank" rel="noopener">Before the First Note</a>
+        <span class="post-date">Sep 18, 2026</span>
+        <div class="post-sub">A Reverie on Youth, Time, and the Courage to Begin</div>
+      </li>
+      <li>
+        <a class="post-title-link" href="https://homosapiens547826.substack.com/p/making-room-for-thought-and-life-769" target="_blank" rel="noopener">Making Room for Thought and Life</a>
+        <span class="post-date">Sep 11, 2026</span>
+        <div class="post-sub">Toward Objectivity Through Radical Self-Examination</div>
+      </li>
     </ul>
+    <p><a href="https://homosapiens547826.substack.com/archive" target="_blank" rel="noopener">All posts &rarr;</a></p>
 
-    <h2 class="section">gallery</h2>
-    <!-- TODO: replace each .ph placeholder with <img src="assets/img/interests/xxx.jpg" alt="..."> -->
-    <div class="gallery">
-      <figure><div class="ph">photo</div><figcaption>Place, Year</figcaption></figure>
-      <figure><div class="ph">photo</div><figcaption>Place, Year</figcaption></figure>
-      <figure><div class="ph">photo</div><figcaption>Place, Year</figcaption></figure>
-      <figure><div class="ph">photo</div><figcaption>Place, Year</figcaption></figure>
+    <h2 class="section" id="badminton">badminton</h2>
+    <div class="photos">
+      <figure><img src="assets/img/interests/badminton-1.jpg" alt="Badminton tournament medal" loading="lazy"><figcaption>Tournament, Jun 2026</figcaption></figure>
+      <figure><img src="assets/img/interests/badminton-2.jpg" alt="Badminton tournament medal" loading="lazy"><figcaption>Tournament</figcaption></figure>
     </div>
   </main>
 
   <footer>
-    <div class="container">&copy; <span data-year>2026</span> Your Name. Hosted on GitHub Pages.</div>
+    <div class="container">&copy; <span data-year>2026</span> Yong Qiao. Hosted on GitHub Pages.</div>
   </footer>
 </body>
 </html>

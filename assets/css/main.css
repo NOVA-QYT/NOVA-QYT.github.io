@@ -234,7 +234,8 @@ h2.section a { color: inherit; }
 .news { width: 100%; border-collapse: collapse; }
 .news td { padding: 6px 0; vertical-align: top; }
 .news td.date {
-  width: 110px;
+  width: 136px;
+  padding-right: 16px;
   white-space: nowrap;
   font-weight: 500;
   color: var(--text-muted);
@@ -333,6 +334,9 @@ h2.section a { color: inherit; }
   gap: 20px;
 }
 
+.grid-wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+@media (max-width: 400px) { .grid-wide { grid-template-columns: 1fr; } }
+
 .card {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -352,6 +356,7 @@ h2.section a { color: inherit; }
   background: var(--bg-soft);
 }
 .card-cover img { width: 100%; height: 100%; object-fit: cover; }
+.card-cover:not(:has(img)) { aspect-ratio: auto; height: 140px; }
 
 .card-body { padding: 14px 16px 16px; }
 .card-body h3 { margin: 0 0 6px; font-size: 1.1rem; font-weight: 500; }
@@ -370,6 +375,42 @@ h2.section a { color: inherit; }
 .list-plain { padding-left: 20px; }
 .list-plain li { margin: 4px 0; }
 .muted { color: var(--text-muted); }
+
+.grid-3 { grid-template-columns: 1fr; }
+@media (min-width: 720px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+.grid-3 .card-cover { aspect-ratio: auto; height: 160px; }
+.grid-3 .card-cover img { object-position: center 30%; }
+
+a.card-link { display: block; color: inherit; }
+a.card-link:hover { text-decoration: none; }
+a.card-link:hover h3 { color: var(--accent); }
+
+h2.section[id] { scroll-margin-top: 72px; }
+
+/* Writing */
+.posts { list-style: none; margin: 0 0 12px; padding: 0; }
+.posts li { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+.post-title-link { font-weight: 500; font-size: 1.05rem; }
+.post-date { margin-left: 10px; font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
+.post-sub { font-size: 0.92rem; color: var(--text-muted); font-style: italic; }
+
+/* Photos (natural aspect, same height per row) */
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.photos figure { margin: 0; flex: 1 1 260px; }
+.photos img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+.photos figcaption { margin-top: 4px; font-size: 0.8rem; color: var(--text-muted); text-align: center; }
+@media (max-width: 576px) { .photos img { height: auto; } }
 
 /* Photo gallery */
 .gallery {

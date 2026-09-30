@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO: replace "Your Name" everywhere on the site -->
-  <title>Publications | Your Name</title>
-  <meta name="description" content="Your Name's homepage: research, publications, projects and interests.">
+  <title>Publications | Yong Qiao</title>
+  <meta name="description" content="Yong Qiao (乔勇): Software Development Engineer at Amazon Web Services; causal discovery, LLM agents and prompt engineering. Publications, projects and interests.">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -15,7 +14,7 @@
 <body>
   <nav class="navbar">
     <div class="container">
-      <a class="nav-brand" href="./"><b>Your</b> Name</a>
+      <a class="nav-brand" href="./"><b>Yong</b> Qiao</a>
       <div style="display:flex;align-items:center;gap:4px;">
         <ul class="nav-links">
           <li><a href="./">about</a></li>
@@ -37,52 +36,56 @@
 
   <main class="container">
     <h1 class="post-title">publications</h1>
-    <p class="desc">* denotes equal contribution. Full list on <a href="#">Google Scholar</a>.</p>
+    <p class="desc">Both papers come from my undergraduate research on automated reasoning and strategy synthesis at Jinan University.</p>
 
-    <h2 class="year">2026</h2>
+    <h2 class="year">2020</h2>
     <ul class="pubs">
       <li class="pub">
-        <span class="abbr">VENUE'26</span>
+        <span class="abbr">IJCAI'20</span>
         <div>
-          <div class="pub-title">[Paper Title 2]</div>
-          <div class="pub-authors"><span class="me">Your Name</span>, Coauthor A, and Coauthor B</div>
-          <div class="pub-venue">In Proceedings of [Conference / Journal], 2026</div>
+          <div class="pub-title">Automatic Synthesis of Generalized Winning Strategies of Impartial Combinatorial Games Using SMT Solvers</div>
+          <div class="pub-authors">Kaisheng Wu, Liangda Fang, Liping Xiong, Zhao-Rong Lai, <span class="me">Yong Qiao</span>, Kaidong Chen, and Fei Rong</div>
+          <div class="pub-venue">In Proceedings of the 29th International Joint Conference on Artificial Intelligence (IJCAI), pp. 1703&ndash;1711, 2020</div>
           <div class="pub-links">
             <button type="button" data-toggle="abstract">Abs</button>
             <button type="button" data-toggle="bibtex">Bib</button>
-            <a href="#">PDF</a>
-            <a href="#">Code</a>
+            <a href="https://www.ijcai.org/Proceedings/2020/0236.pdf" target="_blank" rel="noopener">PDF</a>
+            <a href="https://doi.org/10.24963/ijcai.2020/236" target="_blank" rel="noopener">DOI</a>
           </div>
-          <div class="pub-extra abstract">[Paste the abstract here.]</div>
-          <div class="pub-extra bibtex"><pre>@inproceedings{yourname2026title,
-  title     = {[Paper Title 2]},
-  author    = {Your Name and Coauthor A and Coauthor B},
-  booktitle = {[Conference]},
-  year      = {2026}
+          <div class="pub-extra abstract">We formalize impartial combinatorial games (e.g., Nim, Chomp) in a logical framework based on linear integer arithmetic, then use SMT solvers to synthesize a <i>winning formula</i> that exactly characterizes the winning states, and from it derive generalized winning strategies that hold for possibly infinitely many game instances. Experiments on several games show the approach is effective.</div>
+          <div class="pub-extra bibtex"><pre>@inproceedings{ijcai2020p236,
+  title     = {Automatic Synthesis of Generalized Winning Strategies of Impartial Combinatorial Games Using SMT Solvers},
+  author    = {Wu, Kaisheng and Fang, Liangda and Xiong, Liping and Lai, Zhao-Rong and Qiao, Yong and Chen, Kaidong and Rong, Fei},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  pages     = {1703--1711},
+  year      = {2020},
+  doi       = {10.24963/ijcai.2020/236},
+  url       = {https://doi.org/10.24963/ijcai.2020/236}
 }</pre></div>
         </div>
       </li>
-    </ul>
-
-    <h2 class="year">2025</h2>
-    <ul class="pubs">
       <li class="pub">
-        <span class="abbr">VENUE'25</span>
+        <span class="abbr">AAMAS'20</span>
         <div>
-          <div class="pub-title">[Paper Title 1]</div>
-          <div class="pub-authors">Coauthor A, <span class="me">Your Name</span>, and Coauthor B</div>
-          <div class="pub-venue">[Conference / Journal], 2025</div>
+          <div class="pub-title">Automatic Synthesis of Generalized Winning Strategies of Impartial Combinatorial Games</div>
+          <div class="pub-authors">Kaisheng Wu, <span class="me">Yong Qiao</span>, Kaidong Chen, Fei Rong, Liangda Fang, Zhao-Rong Lai, Qian Dong, and Liping Xiong</div>
+          <div class="pub-venue">In Proceedings of the 19th International Conference on Autonomous Agents and Multiagent Systems (AAMAS), Extended Abstract, pp. 2041&ndash;2043, 2020</div>
           <div class="pub-links">
             <button type="button" data-toggle="abstract">Abs</button>
             <button type="button" data-toggle="bibtex">Bib</button>
-            <a href="#">PDF</a>
+            <a href="https://ifaamas.org/Proceedings/aamas2020/pdfs/p2041.pdf" target="_blank" rel="noopener">PDF</a>
           </div>
-          <div class="pub-extra abstract">[Paste the abstract here.]</div>
-          <div class="pub-extra bibtex"><pre>@article{coauthor2025title,
-  title   = {[Paper Title 1]},
-  author  = {Coauthor A and Your Name and Coauthor B},
-  journal = {[Journal]},
-  year    = {2025}
+          <div class="pub-extra abstract">A short version of the work above: a linear-integer-arithmetic framework for impartial combinatorial games and a method for synthesizing generalized winning strategies, evaluated on several classic games.</div>
+          <div class="pub-extra bibtex"><pre>@inproceedings{wu2020aamas,
+  title     = {Automatic Synthesis of Generalized Winning Strategies of Impartial Combinatorial Games},
+  author    = {Wu, Kaisheng and Qiao, Yong and Chen, Kaidong and Rong, Fei and Fang, Liangda and Lai, Zhao-Rong and Dong, Qian and Xiong, Liping},
+  booktitle = {Proceedings of the 19th International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  pages     = {2041--2043},
+  year      = {2020},
+  note      = {Extended Abstract},
+  url       = {https://ifaamas.org/Proceedings/aamas2020/pdfs/p2041.pdf}
 }</pre></div>
         </div>
       </li>
@@ -90,7 +93,7 @@
   </main>
 
   <footer>
-    <div class="container">&copy; <span data-year>2026</span> Your Name. Hosted on GitHub Pages.</div>
+    <div class="container">&copy; <span data-year>2026</span> Yong Qiao. Hosted on GitHub Pages.</div>
   </footer>
 </body>
 </html>
